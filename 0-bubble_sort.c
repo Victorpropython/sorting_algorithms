@@ -1,5 +1,23 @@
 #include "sort.h"
 /**
+ * swap_ints - To swap int by ascending order
+ * @a: pointer to the first index
+ * @b: pointer to the next index
+ * 
+ * Return: Toreturn nothing
+ * /
+ */
+void swap_ints(int *a, int *b)
+{
+	int temp;
+
+	temp = *a;
+	*a = *b;
+	*b = temp;
+}
+
+
+/**
  * bubble_sort - function that sorts an array of integers in ascending order
  * @array: pointer to arrary
  * @size: size of array
