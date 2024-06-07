@@ -14,24 +14,14 @@
  * @prev: Pointer to the previous element of the list
  * @next: Pointer to the next element of the list
  */
+
 typedef struct listint_s
 {
-    const int n;
-    struct listint_s *prev;
-    struct listint_s *next;
-} listint_t;
 
-/**
- * struct deck_node_t - for doublepointer
- * @deck: the deck node
- * Return: Nothing
- *
- */
-typedef struct deck_node_t
-{
-	int y;
-	struct deck_node_t *ptr;
-} deck_node_t;
+	const int n;
+	struct listint_s *prev;
+	struct listint_s *next;
+} listint_t;
 
 
 
@@ -49,6 +39,6 @@ void heap_sort(int *array, size_t size);
 void radix_sort(int *array, size_t size);
 void bitonic_sort(int *array, size_t size);
 void quick_sort_hoare(int *array, size_t size);
-void sort_deck(deck_node_t **deck);
+/*void sort_deck(deck_node_t **deck);*/
 void swap_ints(int *a, int *b);
 #endif

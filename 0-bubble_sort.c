@@ -3,9 +3,8 @@
  * swap_ints - To swap int by ascending order
  * @a: pointer to the first index
  * @b: pointer to the next index
- * 
+ *
  * Return: Toreturn nothing
- * /
  */
 void swap_ints(int *a, int *b)
 {
@@ -25,7 +24,7 @@ void swap_ints(int *a, int *b)
  */
 void bubble_sort(int *array, size_t size)
 {
-	size_t i;
+	size_t i, num = size;
 	bool bubb = false;
 
 	if (array == NULL || size < 2)
@@ -35,7 +34,7 @@ void bubble_sort(int *array, size_t size)
 	while (bubb == false)
 	{
 		bubb = true;
-		for (i = 0; i < size - 1; i++)
+		for (i = 0; i < num - 1; i++)
 		{
 			if (array[i] > array[i + 1])
 			{
@@ -44,6 +43,6 @@ void bubble_sort(int *array, size_t size)
 				bubb = false;
 			}
 		}
-		size--;
+		num--;
 	}
 }
