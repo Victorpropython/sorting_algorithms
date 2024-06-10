@@ -2,7 +2,7 @@
 
 void swap_ints(int *a, int *b);
 int lomuto_partition(int *array, size_t size, int left, int right);
-void lomuto_sort(int *array, size_t size,int left, int right);
+void lomuto_sort(int *array, size_t size, int left, int right);
 void quick_sort(int *array, size_t size);
 
 /**
@@ -27,9 +27,9 @@ void swap_ints(int *a, int *b)
  * @array:The array namefor integers
  * @size: of array
  * @left: The first index of the subset to order
- * @right: The last index of the subset 
+ * @right: The last index of the subset
  *
- * Return: The final partirion index, result 
+ * Return: The final partirion index, result
  */
 
 int lomuto_partition(int *array, size_t size, int left, int right)
