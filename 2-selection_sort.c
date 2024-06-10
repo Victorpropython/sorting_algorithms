@@ -5,7 +5,7 @@
  * @b: The second integer to be swapped
  */
 
-void swap_ints(ints *a, int *b)
+void swap_ints(int *a, int *b)
 {
 	int temp;
 
@@ -32,7 +32,7 @@ void selection_sort(int *array, size_t size)
 	for (i = 0; i < size - 1; i++)
 	{
 		min = array + i;
-		for (j = i + 1, j < size; j++)
+		for (j = i + 1; j < size; j++)
 		{
 			min = (array[j] < *min) ? (array + j) : min;
 		}
