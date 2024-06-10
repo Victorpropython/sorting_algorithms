@@ -1,6 +1,6 @@
 #include "sort.h"
 
-void swap_ints(int *a, *b);
+void swap_ints(int *a, int *b);
 int lomuto_partition(int *array, size_t size, int left, int right);
 void lomuto_sort(int *array, size_t size,int left, int right);
 void quick_sort(int *array, size_t size);
@@ -11,13 +11,13 @@ void quick_sort(int *array, size_t size);
  * @b: Second digit for swapping
  * REturn: Nothing
  */
-void swap_ints(int *a, *b)
+void swap_ints(int *a, int *b)
 {
 	int temp;
 
 	temp = *a;
 	*a = *b;
-	*b = tmep;
+	*b = temp;
 }
 
 
@@ -32,7 +32,7 @@ void swap_ints(int *a, *b)
  * Return: The final partirion index, result 
  */
 
-int lomuto_partition(int *array, size_t size, int left. lnt right)
+int lomuto_partition(int *array, size_t size, int left, int right)
 {
 	int *pivot, above, below;
 
